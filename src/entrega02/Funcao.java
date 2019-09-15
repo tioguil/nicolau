@@ -1,3 +1,5 @@
+package entrega02;
+
 import javax.xml.ws.handler.Handler;
 
 public class Funcao implements Runnable{

@@ -1,18 +1,19 @@
+package entrega02;
+
 import javax.script.ScriptException;
 
 public class Main {
 
 
     public static void main(String[] args) throws ScriptException, InterruptedException {
-
-        paralela();
+        double x = 1.;
+        paralela(x);
         System.out.println("------------------------------------------------");
-        sequencial();
+        sequencial(x);
     }
 
-    public static void paralela(){
+    static void paralela(Double x){
         Double result = 0.0;
-        Double x = 10.0;
 
 //      3x^4 + 10x^3 -5x^2 + 7x + 10;
 
@@ -79,9 +80,8 @@ public class Main {
     }
 
 
-    public static void sequencial(){
+    static void sequencial(double x){
         Double result = 0.0;
-        Double x = 10.0;
 
 //      3x^4 + 10x^3 -5x^2 + 7x + 10;
 
